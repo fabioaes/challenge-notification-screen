@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-color-body);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+:root {
+  --btn-color: hsl(1, 90%, 64%);
+  --main-bg: hsl(0, 0%, 100%);
+  --p-main: hsl(224, 21%, 14%);
+  --blue-main: hsl(219, 85%, 26%);
+  --p-main-Wigth: 600;
+  --time-color: hsl(219, 14%, 63%);
+  --color-text-message: hsl(219, 12%, 42%);
+  --bg-color-body: hsl(210, 60%, 98%); 
+  --bg-message: hsl(211, 68%, 94%);    
+}
+
+main {
+  height: 90vh;
+  width: 100vh;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#title div {
+  display: flex;
+  gap: 1rem;  
+}
+
+#title div p {
+  font-size: 1.5rem;  
+  font-weight: 600;
+  color: var(--p-main);  
+}
+
+#title #read-All {
+  font-size: 1.1rem;
+  color: var(--blue-main);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#title div span {
+  width: 2.5rem;
+  height: 2rem;
+  background-color: var(--blue-main);
+  color: var(--main-bg);
+  display: grid;
+  place-content: center;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600; 
+}
+
+main .noticontent {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  align-items: center;
+  gap: 1rem;  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.noticontent img {
+  width: 3.5rem;
+  height: 3.4rem;
+}
+
+.content .text {
+  display: flex;
+  gap: 0.5rem; 
+  color: var(--color-text-message); 
+}
+
+.content .text .name {
+  color: var(--p-main);
+  font-weight: var(--p-main-Wigth)
+}
+
+.text p {
+  font-weight: var(--p-main-Wigth);
+}
+
+.content .text a {
+  text-decoration: none;
+  color: var(--blue-main);
+  font-weight: var(--p-main-Wigth);
+}
+
+.commented-post {
+  position: relative;
+  left: 14rem;
+}
+
+.noticontent .btn {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--btn-color);
+  border-radius: 5rem;
+  position: relative;
+  top: -0.5rem; 
+}
+
+.content .time {
+    color: var(--time-color);  
+}
+
+.item-message {
+  margin-bottom: 1.5rem;
+}
+
+.item-message>.content {
+  position: relative;
+  top: 1rem;  
+}
+
+.content .message,.item {
+  width: 100%;
+  height: auto;
+  padding: 0.8rem 0.9rem ;
+  position: relative;
+  top: 0.4rem;
+  
+  border-radius: 0.3rem;
+  color: var(--color-text-message);
+  background-color: var(--bg-message);
+  cursor: pointer;  
+}
